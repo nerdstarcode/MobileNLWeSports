@@ -1,9 +1,9 @@
 import React from 'react';
 import { TouchableOpacity, View, Text } from 'react-native';
-import {GameController} from 'phosphor-react-native';
-import { styles } from './styles';
+import { GameController } from 'phosphor-react-native';
 
 import { DuoInfo } from '../DuoInfo';
+import { styles } from './styles';
 import { THEME } from '../../theme';
 
 export interface DuoCardProps {
@@ -21,6 +21,7 @@ interface Props{
 } 
 
 export function DuoCard({data, onConnect}: Props) {
+  
   return (
     <View style={styles.container}>
         <DuoInfo
